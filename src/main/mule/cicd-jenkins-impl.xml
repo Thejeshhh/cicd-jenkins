@@ -11,5 +11,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="601f175e-97d0-414f-af28-bcc4a7aed208" config-ref="HTTP_Listener_config" path="/cicd"/>
 		<logger level="INFO" doc:name="Logger" doc:id="fd1df381-a43a-4480-9615-feb53bd1dacd" message="Request received"/>
 		<set-payload value='#["success"]' doc:name="Set Payload" doc:id="e0944a3d-f9a6-4fb1-b25d-e53b07872354" />
+		<logger level="INFO" doc:name="Logger" doc:id="f3b0445b-eed0-4983-9503-7e2d3df42fb6" />
 	</flow>
 </mule>
