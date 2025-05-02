@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicd-jenkins-implFlow" doc:id="c038c650-0b98-487d-bdcb-92a00fa36626" >
 		<http:listener doc:name="Listener" doc:id="601f175e-97d0-414f-af28-bcc4a7aed208" config-ref="HTTP_Listener_config" path="/cicd"/>
 		<logger level="INFO" doc:name="Logger" doc:id="fd1df381-a43a-4480-9615-feb53bd1dacd" message="Request received"/>
-		<set-payload value='#[payload]' doc:name="Set Payload" doc:id="e0944a3d-f9a6-4fb1-b25d-e53b07872354" />
+		<set-payload value='#["success"]' doc:name="Set Payload" doc:id="e0944a3d-f9a6-4fb1-b25d-e53b07872354" />
 	</flow>
 </mule>
